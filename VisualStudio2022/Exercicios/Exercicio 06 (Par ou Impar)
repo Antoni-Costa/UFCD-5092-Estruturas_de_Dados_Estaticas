@@ -1,0 +1,14 @@
+            Random aleatorio = new Random();
+            int num_gerado = aleatorio.Next(1, 1000);
+
+            if (num_gerado % 2 == 0)
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"O número {num_gerado} é par");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine($"O número {num_gerado} é ímpar.");
+            }
+        Console.ResetColor();
