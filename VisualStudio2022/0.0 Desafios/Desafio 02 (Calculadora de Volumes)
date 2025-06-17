@@ -1,0 +1,10 @@
+ double raio;
+ double volume;
+
+ Console.WriteLine("Indique o raio de uma esfera.");
+ raio = double.Parse(Console.ReadLine());
+
+ // Em programação, para dividir usamos o .0 senão o resultado será diferente..
+
+ volume = (4.0 / 3.0) * Math.PI * Math.Pow(raio, 3);
+ Console.WriteLine($"O volume da esfera com raio {raio} é {Math.Round(volume, 2)} m3.");
