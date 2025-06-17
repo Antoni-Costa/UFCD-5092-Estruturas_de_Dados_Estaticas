@@ -1,0 +1,35 @@
+            Random aleatorio = new Random();
+
+            int numeros = 0;
+            int estrelas = 0;
+            int num_chaves = 0;
+            Console.WriteLine("Quantas chaves a serem criadas? ");
+            num_chaves = int.Parse(Console.ReadLine());
+
+
+
+            for (int i = 0; i < num_chaves; i++) 
+            {
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine($"\nChave número {i + 1}: ");
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Os números são: ");
+                for (int j = 0; j < 5; j++)
+                {
+                    numeros = aleatorio.Next(1, 51);
+                    Console.Write($"{numeros} ");
+                }
+            
+                Console.ResetColor();
+
+                Console.ForegroundColor= ConsoleColor.DarkCyan;
+                Console.WriteLine("\nAs estrelas são: ");
+                for (int j = 0;j < 2; j++)
+                {
+                    estrelas = aleatorio.Next(1, 13);
+                    Console.Write($"{estrelas} ");
+                }
+            }
+
+            Console.ResetColor();
