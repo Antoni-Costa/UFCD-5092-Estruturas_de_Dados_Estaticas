@@ -1,0 +1,30 @@
+ double nota1, nota2, nota3, media;
+ string letra;
+ 
+
+ Console.WriteLine("Insira a primeira nota");
+ nota1 = int.Parse(Console.ReadLine());
+
+ Console.WriteLine("Insira a segunda nota");
+ nota2 = int.Parse(Console.ReadLine());
+
+ Console.WriteLine("Insira a terceira nota");
+ nota3 = int.Parse(Console.ReadLine());
+
+ Console.WriteLine("Qual o método de cálculo de média desejado? A - aritmétrica; P - ponderada");
+ letra = Console.ReadLine();
+
+ if (letra.ToLower() == "a")
+ {
+     media = (nota1 + nota2 + nota3) / 3;
+     Console.WriteLine($"A média aritmétrica das notas é {media, 2}");
+ }
+ else if (letra.ToLower() == "p")
+ {
+     media = (nota1 * 0.50) + (nota2 * 0.30) + (nota3 * 0.20);
+     Console.WriteLine($"A média ponderada das notas é {media, 2}");
+ }
+ else
+ {
+     Console.WriteLine("Introduza uma forma de cálculo válida.");
+ }
