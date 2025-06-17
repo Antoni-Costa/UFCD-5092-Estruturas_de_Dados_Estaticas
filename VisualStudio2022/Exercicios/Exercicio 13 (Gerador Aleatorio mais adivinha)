@@ -1,0 +1,27 @@
+            Random aleatorio = new Random();
+            int num_a_adivinhar = aleatorio.Next(1, 1000);
+            int num_tentativas = 0;
+            //Console.WriteLine(num_a_adivinhar);
+
+            int num_proposto=0;
+
+            while (num_proposto != num_a_adivinhar)
+            {
+                Console.WriteLine("Que número apostas? ");
+                num_proposto = int.Parse(Console.ReadLine());
+
+                num_tentativas++;
+
+
+                if (num_proposto > num_a_adivinhar)
+                {
+                    Console.WriteLine("Um pouco mais baixo.");
+                }
+                else if (num_proposto < num_a_adivinhar)
+                {
+                    Console.WriteLine("Um poco mas alto.");
+                }
+
+            }
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
+                Console.WriteLine($"Parabéns acertaste em {num_tentativas} !!! ");
