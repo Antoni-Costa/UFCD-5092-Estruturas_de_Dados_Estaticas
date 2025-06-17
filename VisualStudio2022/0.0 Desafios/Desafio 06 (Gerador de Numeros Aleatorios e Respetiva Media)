@@ -1,0 +1,22 @@
+            Console.Write("Gerador números aleatórios e respetiva média. \n");
+
+            Random aleatorio = new Random();
+            int num, maior = 0, menor = 1001;
+            float soma = 0;
+
+            Console.WriteLine("Gerador números aleatórios, com o maior e menor mais respetiva média.");
+
+            for (int contador = 1; contador <= 10; contador++)
+            {
+
+                num = aleatorio.Next(1, 1001);
+                Console.WriteLine(contador + "º número gerado: " + num);
+                if (num > maior)
+                    maior = num;
+                if (num < menor)
+                    menor = num;
+                soma += num;
+            }
+                Console.WriteLine($"\nO número maior é: {maior}\n");
+                Console.WriteLine($"O menor número é: {menor}\n");
+                Console.WriteLine($"A média dos números gerados é: {soma / 10} \n");
