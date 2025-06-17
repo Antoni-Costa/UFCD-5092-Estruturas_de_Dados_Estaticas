@@ -1,0 +1,25 @@
+string sexo;
+double altura;
+
+Console.WriteLine("Indique o seu sexo (Masculino ou Feminino).");
+sexo = Console.ReadLine();
+
+Console.WriteLine("Indique a sua altura.");
+altura = double.Parse(Console.ReadLine());
+
+if (sexo.ToLower() == "masculino")
+{
+    Console.ForegroundColor = ConsoleColor.DarkRed;
+    Console.WriteLine($"O seu peso ideal é {72.7 * altura - 58}");
+}
+else if (sexo.ToLower() == "feminino")
+{
+    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.WriteLine($"O seu peso ideal é {62.1 * altura - 44.7}");
+}
+else
+{
+    Console.WriteLine("Opção inválida.");
+}
+
+Console.ResetColor();
