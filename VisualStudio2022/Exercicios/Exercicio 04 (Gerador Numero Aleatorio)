@@ -1,0 +1,4 @@
+            Random aleatório=new Random();
+            int num_gerado = aleatório.Next(1, 30);
+
+            Console.WriteLine($"O número gerado aleatoriamente foi {num_gerado}");
