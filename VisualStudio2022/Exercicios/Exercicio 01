@@ -1,0 +1,14 @@
+            Console.WriteLine("Primeira aula");
+            Console.WriteLine("UFCD 5092");
+            Console.WriteLine("Integração com base de dados com o Formador: XXX XXX");
+
+            string nome;
+            int idade;
+
+            Console.WriteLine("Por favor indique o seu nome.");
+            nome = Console.ReadLine();
+
+            Console.WriteLine("Por favor indique a sua idade.");
+            idade = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Bem vindo formando {nome} com {idade} anos.");
