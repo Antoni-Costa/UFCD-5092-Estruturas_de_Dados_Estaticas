@@ -1,0 +1,22 @@
+            string frase;
+
+            Console.WriteLine("Escreva uma frase:");
+            frase = Console.ReadLine();
+
+            Console.WriteLine("-------Escreva na íntegra------");
+            for (int i = 0; i < frase.Length; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.Write(frase.Substring(i, 1).ToUpper());
+                }
+                else
+                {
+                    Console.ForegroundColor= ConsoleColor.Green;
+                    Console.Write(frase.Substring(i, 1).ToLower());
+                }
+                
+            }
+
+            Console.ResetColor();
