@@ -1,0 +1,16 @@
+            Random aleatorio = new Random();
+            int num_gerado = aleatorio.Next(1, 100);
+            
+            Console.WriteLine(num_gerado);
+
+            if (num_gerado > 50)
+            {
+                Console.WriteLine("O nº é maior ou igual a 50.");
+            }
+            else if (num_gerado == 50)
+            {
+                Console.WriteLine("O nº é igual a 50.");
+            }
+            else
+            {
+                Console.WriteLine("O nº é menor que 50.");
