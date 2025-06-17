@@ -1,0 +1,14 @@
+  string nome;
+  int idade;
+
+  Console.WriteLine("Como te chamas?");
+  nome = Console.ReadLine();
+
+  Console.WriteLine("Que idade tens?");
+  idade = int.Parse(Console.ReadLine());
+
+  //Concatenação
+
+  Console.WriteLine($"O teu nome é {nome} e tens {idade} anos"); //Esta é mais simples.
+  Console.WriteLine("O teu nome é {0} e tens {1} anos", nome, idade);
+  Console.WriteLine("O teu nome é " + nome + " e tens " + idade + " anos.");
