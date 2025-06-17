@@ -1,0 +1,19 @@
+            Random aleatorio = new Random();
+            int num_gerado;
+            int num_a_gerar = 20;
+
+            while (num_a_gerar > 0)
+            {
+                num_gerado = aleatorio.Next(1, 100);
+                if (num_gerado % 2 == 0)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                }
+
+                Console.Write($"{num_gerado} ");
+
+                num_a_gerar--;
